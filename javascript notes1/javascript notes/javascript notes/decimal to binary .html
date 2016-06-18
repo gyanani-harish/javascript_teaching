@@ -1,0 +1,32 @@
+<html>
+	<head>
+			<script>
+				
+				function qw()
+				{
+					var n=document.getElementById("a").value;
+					var x="";
+					for(var i=1;n!=0;i++)
+					{
+						var r=n%2;
+						x=x+r;
+						n=parseInt(n/2);
+					}
+					var y="";
+					for(var i=0;i<x.length;)
+					{
+						var z=x.substr(x.length-1,1);
+						x=x.substr(0,x.length-1);
+						y=y+z;
+					}
+					document.getElementById("a1").value=y;
+				}
+			
+			</script>
+	</head>
+	<body>
+		<input type="text" id="a"><br />
+		<button onclick="qw()">binary</button><br />
+		<input type="text" id="a1">
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<script>
+			function fact()
+				{
+					var n=document.getElementById("abc").value;
+					var sum=0; 
+					for(var i=1;i<=n;i++)
+					{
+						var x=Number(prompt("enter a value"));
+						sum=sum+x;
+					}
+					var avg=Number(sum/n);
+					document.write(avg);
+				
+				}
+				
+		</script>
+	</head>
+	<body>
+	Enter How many no.
+	<input type="text" id="abc">
+	<button onclick="fact()">ok</button>
+	</body>
+</html>

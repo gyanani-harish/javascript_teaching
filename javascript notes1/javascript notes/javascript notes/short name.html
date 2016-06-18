@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<script>
+			function qw()
+			{
+				var a=document.getElementById("as").value;
+				var b=document.getElementById("as1").value;
+				var c=document.getElementById("as2").value;
+				
+				var x=a.substr(0,1);
+				var y=x.toUpperCase();
+				var z=b.substr(0,1);
+				var t=z.toUpperCase();
+				document.getElementById("as3").value=c+" "+y+"."+t+".";
+			}	
+			function er()
+			{
+				document.getElementById("as").value="";
+				document.getElementById("as1").value="";
+				document.getElementById("as2").value="";
+				document.getElementById("as3").value="";
+			}
+		</script>
+	</head>
+	<body>
+		First NAme :<input type="text" id="as"><br />
+		Middle Name :<input type="text" id="as1"><br />
+		Last Name :<input type="text" id="as2"><br />
+		<button onclick="qw()">Get Short Name</button>
+		<input type="RESET" onclick="er()"><br />
+		Short Name :<input type="text" id="as3"><br />
+	</body>
+</html>

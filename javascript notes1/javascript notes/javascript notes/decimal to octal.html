@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<script>
+		function abc()
+		{
+			var test = document.getElementsByName("value"); 
+			if(test[1].checked)
+			{
+				var n=document.getElementById("a2").value;
+					var x="";
+					for(var i=1;n!=0;i++)
+					{
+						var r=n%8 ;
+						x=x+r;
+						n=parseInt(n/8);
+					}
+					var y="";
+					for(var i=0;i<x.length;)
+					{
+						var z=x.substr(x.length-1,1);
+						x=x.substr(0,x.length-1);
+						y=y+z;
+					}
+					document.getElementById("a2").value=y;
+			}
+			else if(test[0].checked)
+			{
+			
+					var n=document.getElementById("a2").value;
+					var sum=0;
+					for (var i=0;n.length>0;i++)
+						{
+							var z=n.substr(n.length-1,1);//fetch last digit
+							var a=Math.pow(8,i);
+							var b=Number(z*a);
+							n=n.substr(0,n.length-1);	// reduce digit
+							sum=Number(sum+b);
+						 }
+						 document.getElementById("a2").value=sum;
+			}
+			
+		}
+		</script>
+	</head>
+	<body>
+		<input onchange="abc()" type="radio" name="value" value="decimal" checked="checked" >decimal<br />
+		<input type="text" id="a2">
+		<input onchange="abc()" type="radio" name="value" value="octal" >octal<br />
+
+	</body>
+</html>

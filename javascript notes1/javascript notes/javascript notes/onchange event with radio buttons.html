@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<script>
+		function abc()
+		{
+			var test = document.getElementsByName("color"); 
+			if(test[0].checked)
+			{
+				document.getElementById("zx").style.backgroundColor='red';
+			}
+			else
+			{
+				document.getElementById("zx").style.backgroundColor='black';
+			}
+		}
+		</script>
+	</head>
+	<body>
+		<input onchange="abc()" type="radio" name="color" value="red">red<br />
+		<input onchange="abc()" type="radio" name="color" value="black">black<br />
+		<div style="width:100px;height:100px;background-color:blue;" id="zx"></div>
+	</body>
+</html>

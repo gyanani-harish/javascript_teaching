@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<script>
+			function qw()
+			{
+				var a = document.getElementById("as").value;
+				var b = Math.sqrt(a);
+				document.write(b);
+			}
+		</script>
+	</head>
+	<body>
+		<input type = "text" id = "as">
+		<button onclick="qw()">ok</button>
+	<body>
+</html>

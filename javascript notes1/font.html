@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<script>
+			function a()
+			{
+				if(document.getElementById("c1").checked)
+				{
+					document.getElementById("a1").style.fontWeight="bold";
+				}
+				else
+				{
+				document.getElementById("a1").style.fontWeight="normal";
+				}
+				
+			}
+			function b()
+			{
+				if(document.getElementById("c2").checked)
+				{
+					document.getElementById("a1").style.fontStyle="italic";
+				}
+				else
+				{
+				document.getElementById("a1").style.fontStyle="normal";
+				}
+			}
+			function c()
+			{
+				if(document.getElementById("c3").checked)
+				{
+					document.getElementById("a1").style.textDecoration="underline";
+				}
+				else
+				{
+				document.getElementById("a1").style.textDecoration="none";
+				}
+			}
+			
+			
+				
+		</script>
+	</head>
+	<body>
+	<input type="checkbox" value="bold" id="c1" onclick="a()">bold
+	<input type="checkbox" value="italic" onclick="b()" id="c2">italic
+	<input type="checkbox" value="underline" onclick="c()" id="c3">underline<br />
+	<input type="text" id="a1"><br />
+	
+	</body>
+</html>
+	
+	

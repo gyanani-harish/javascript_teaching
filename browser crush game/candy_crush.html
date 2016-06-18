@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>Untitled</title>
+  <script>
+    function displayButtons()
+    {
+      for(var i=1;i<=30;i++)
+      {
+        document.write("<button style='height:50px;width:50px;'></button>");
+        if(i%5==0)
+        {
+          document.write("<br />");
+        }
+      }
+    }
+  </script>
+</head>
+
+<body onload="displayButtons()">
+
+</body>
+
+</html>

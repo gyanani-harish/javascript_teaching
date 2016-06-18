@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<script>
+			function as()
+			{
+				var str = document.getElementById("qw").value;
+				var t=true;
+				for(var i=0;i<str.length;i++)
+				{
+					if(t==true)
+					{
+						var x=str.substr(i,1);
+						document.write(x.toUpperCase());
+						t=false;
+					}
+					else
+					{
+						var x=str.substr(i,1);
+						document.write(x.toLowerCase());
+						t=true;
+					
+					}
+				}
+					
+			}
+			
+		</script>
+	</head>
+	<body>
+	<input type = "text" id="qw">
+	<input type = "text" id="er">
+	<button onclick="as()">ok</button>
+	</body>
+</html>

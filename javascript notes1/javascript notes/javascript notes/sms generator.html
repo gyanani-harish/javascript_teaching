@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<script>
+			function qw()
+			{
+				var msg=document.getElementById("as").value;
+				var l = msg.length;
+				document.getElementById("as1").value=l;
+				document.getElementById("as2").value=160-l;
+			}	
+			function qw1()
+			{
+				var msg=document.getElementById("as").value;
+				document.getElementById("as3").value=msg.substr(0,158);
+			}
+			function qw2()
+			{
+				document.getElementById("as").value="";
+				document.getElementById("as1").value="";
+				document.getElementById("as2").value="";
+				document.getElementById("as3").value="";
+			}
+			
+		</script>
+	</head>
+	<body>
+		sms	  <textarea id="as" onkeypress="qw()" onkeydown="qw()" onkeyup="qw()" maxlength="160"></textarea><br />
+		Entered	<input type="text" id="as1">
+		Remaining	<input type="text" id="as2"><br />
+		Actual SMS to  be sent (Only the text in between)<br />
+		<Button onclick="qw1()">Click to Truncate the SMS to 160 Characters</button>
+		<button onclick="qw2()">RESET</button><br />
+		 <textarea id="as3"></textarea>
+	
+	</body>
+</html>

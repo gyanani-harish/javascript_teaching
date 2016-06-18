@@ -1,0 +1,22 @@
+<html>
+	<script>
+		function as()
+		{
+			var a=new Array();
+			var b=new Array(700,800,900);
+			var d=new Array(5,6,7,8);
+			a[0]=100;
+			a[1]=200;
+			a[2]=300;
+			a[3]=400;
+			var c=a.concat(b,d);
+			for(var i=0;i<c.length;i++)
+			{
+				document.write(c[i]+"<br />");
+			}
+		}
+	</script>
+	<body>
+		<button onclick="as()">ok</button>
+	</body>
+</html>

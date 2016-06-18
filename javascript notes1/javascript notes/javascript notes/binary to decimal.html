@@ -1,0 +1,27 @@
+<html>
+	<head>
+			<script>
+				function qw()
+				{
+					var n=document.getElementById("a").value;
+					var sum=0;
+					for (var i=0;n.length>0;i++)
+						{
+							var z=n.substr(n.length-1,1);//fetch last digit
+							var a=Math.pow(2,i);
+							var b=Number(z*a);
+							n=n.substr(0,n.length-1);	// reduce digit
+							sum=Number(sum+b);
+						 }
+						 document.getElementById("a1").value=sum;
+						 
+				}
+				
+			</script>
+	</head>
+	<body>
+		<input type="text" id="a"><br />
+		<button onclick="qw()">binary to decimal</button><br />
+		<input type="text" id="a1">
+	</body>
+</html>

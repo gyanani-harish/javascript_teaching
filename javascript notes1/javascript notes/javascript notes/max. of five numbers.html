@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<script>
+			function fact()
+				{
+					var a=document.getElementById("one").value;
+					var b=document.getElementById("two").value;
+					var c=document.getElementById("three").value;
+					var d=document.getElementById("four").value;
+					var e=document.getElementById("five").value;
+					if (a>=b && a>=c && a>=d && a>=e)
+						{
+							document.write(a);
+						}
+					else if (b>=a && b>=c && b>=d && b>=e)	
+						{
+							document.write(b);
+						}
+					else if (c>=a && c>=b && c>=d && c>=e)	
+						{
+							document.write(c);
+						}
+					else if (d>=a && d>=b && d>=c && d>=e)	
+						{
+							document.write(d);
+						}
+					else
+					{
+							document.write(e);
+					}
+				
+				}
+				
+		</script>
+	</head>
+	<body>
+	<input type="text" id="one">
+	<input type="text" id="two">
+	<input type="text" id="three">
+	<input type="text" id="four">
+	<input type="text" id="five">
+	<button onclick="fact()">ok</button>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<script>
+			function qw()
+			{
+				var str = document.getElementById("as").value;
+				var b = true;
+				for(var i=0;i<str.length;i++)
+				{
+					if(b==true)
+						{
+							var q = str.substr(i,1);
+							var a = q.toUpperCase();
+							document.write(a);
+							b=false;
+						}
+					else
+						{
+							var e = str.substr(i,1);
+							var t = e.toLowerCase();
+							document.write(t);
+							b=true;
+						}
+				}
+				
+			}
+		</script>
+	</head>
+	<body>
+		<input type="text" id="as">
+		<button onclick="qw()">ok</button>
+	</body>
+</html>

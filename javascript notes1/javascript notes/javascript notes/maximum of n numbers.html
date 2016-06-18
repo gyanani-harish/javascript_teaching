@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<script>
+			function fact()
+				{
+					var n=document.getElementById("abc").value;
+					var max=Number(prompt("enter a value"));
+					for(var i=1;i<=n-1;i++)
+					{
+						var x=Number(prompt("enter a value"));
+						if(x>max)
+						{
+							max=x;
+						}
+					}
+					document.write(max);
+				
+				}
+				
+		</script>
+	</head>
+	<body>
+	Enter How many no.
+	<input type="text" id="abc">
+	<button onclick="fact()">ok</button>
+	</body>
+</html>

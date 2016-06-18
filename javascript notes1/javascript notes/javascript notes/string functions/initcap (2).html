@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<script>
+			function as()
+			{
+				
+					var str= document.getElementById("qw").value;
+				//extract first letter from string
+					var w=str.substr(0,1);
+				//convert first letter into uppercase
+					var a=w.toUpperCase();
+				//extract second and other letters
+					var s = str.substr(1);
+				//convert first letter into lowercase
+					var d=s.toLowerCase();
+				// combined both results
+					document.getElementById("er").value=a.concat(d);
+					
+					
+			}
+			
+		</script>
+	</head>
+	<body>
+	<input type = "text" id="qw">
+	<input type = "text" id="er">
+	<button onclick="as()">ok</button>
+	</body>
+</html>

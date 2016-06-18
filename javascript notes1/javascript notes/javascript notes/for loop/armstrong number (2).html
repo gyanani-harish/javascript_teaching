@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<script>
+			function qw()
+			{
+				var n=parseInt(document.getElementById("as").value);
+					var i=0;var nn=n;
+					for (i=0;n!=0;i++)
+						{
+							n = parseInt(n/10);
+						}
+						var sum=0;
+						n=nn;
+					for(var j=0;j<i;j++)
+					{
+						var r = parseInt(nn%10);
+						var x= Math.pow(r,i);
+						sum=sum+x;
+						nn=parseInt(nn/10);
+					}
+					
+							
+						if(n==sum)
+						{
+							document.write("armstrong number");
+						}
+						else
+						{
+							document.write("not armstrong number");
+						}
+			}				
+		</script>
+	</head>
+	<body>
+		<input type="text" id="as">
+		<button onclick="qw()">ok</button>
+	</body>
+</html>
+

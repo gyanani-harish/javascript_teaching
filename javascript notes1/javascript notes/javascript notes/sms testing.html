@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<script>
+			function qw()
+			{
+				var msg=document.getElementById("as").value;
+				var l = msg.length;
+				document.getElementById("as1").value=l;
+				document.getElementById("as2").value=160-l;
+			}	
+		</script>
+	</head>
+	<body>
+		sms	  <textarea id="as" onkeypress="qw()" onkeydown="qw()" onkeyup="qw()"></textarea><br />
+		Entered	<input type="text" id="as1">
+		Remaining	<input type="text" id="as2">
+		
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+	<head>
+	
+		<script>
+			function qw()
+			{
+				var a=document.getElementById("as").value;
+				document.getElementById("as1").value=a.toLowerCase();
+				document.getElementById("as2").value=a.toUpperCase();
+			}
+			function er()
+			{
+				document.getElementById("as").value="";
+				document.getElementById("as1").value="";
+				document.getElementById("as2").value="";
+			}
+				
+		</script>
+	</head>
+	<body>
+	
+	text <input type="text" id="as"><br />
+	<button onclick="qw()">Change Case</button>
+	<input type="reset" onclick="er()"/><br />
+	text (lower case) <input type="text" id="as1"><br />
+	text (upper case ) <input type="text" id="as2">
+	
+
+	</body>
+</html>

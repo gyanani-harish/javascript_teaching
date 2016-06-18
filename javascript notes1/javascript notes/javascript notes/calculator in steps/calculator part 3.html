@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<script>
+		function append(id)
+		{
+			var t=document.getElementById("area").value;
+			var buttonText=document.getElementById(id).innerHTML;
+			document.getElementById("area").value=t+buttonText;
+		}
+		</script>
+	</head>
+	<body>
+		<textarea id="area"></textarea><br />
+		<button id="b1" onclick="append('b1')">1</button>
+		<button id="b2" onclick="append('b2')">2</button>
+	</body>
+</html>

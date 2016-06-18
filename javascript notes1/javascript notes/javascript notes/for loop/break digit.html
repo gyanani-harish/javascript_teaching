@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<script>
+			function qw()
+			{
+				var n=parseInt(document.getElementById("as").value);
+					var i=0;
+					for (i=0;n!=0;i++)
+						{
+							var r=parseInt(n%10);
+							document.write(r+"<br />");
+							n = parseInt(n/10);
+						}
+			}	
+		</script>
+	</head>
+	<body>
+		<input type="text" id="as">
+		<button onclick="qw()">ok</button>
+	</body>
+</html>

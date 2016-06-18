@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<script>
+			function qw()
+			{
+				var str=document.getElementById("as").value;
+				// extract firest character
+				var n = str.substr(0,1);
+				// convert 1st character to upper case
+				var b = n.toUpperCase();
+				//extract other character 
+				var q = str.substr(1);
+				//convert into lower case
+				var w = q.toLowerCase();
+				document.write(b.concat(w));
+			}
+		</script>
+	</head>
+	<body>
+		<input type="text" id="as">
+		<button onclick="qw()">ok</button>
+	</body>
+</html>

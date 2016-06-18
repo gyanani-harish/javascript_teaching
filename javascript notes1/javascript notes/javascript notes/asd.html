@@ -1,0 +1,23 @@
+
+	<head>
+		<script>
+			function as()
+			{
+				var a = Number(document.getElementById("qw").value);
+				var b = Number(document.getElementById("sd").value);
+				var c = Number(document.getElementById("df").value);
+				var s = (a + b + c) / 2;
+				document.write(s);
+				var d = Math.sqrt(s*(s-a)*(s-b)*(s-c));
+				document.write(d);
+			}
+			
+		</script>
+	</head>
+	<body>
+	<input type = "text" id="qw">
+	<input type="text" id="sd">
+	<input type="text" id="df">
+	<button onclick="as()">ok</button>
+	</body>
+</html>

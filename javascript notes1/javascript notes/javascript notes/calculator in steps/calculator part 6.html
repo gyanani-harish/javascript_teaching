@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<script>
+		var oldValue=0.0;
+		var z=false;
+		var opcode=0;
+		/*
+			1 for plus
+			2 for minus
+			3 for multiply
+			4 for divide
+		*/
+		function append(id)
+		{
+			if(z==false)
+			{
+				var t=document.getElementById("area").value;
+				var buttonText=document.getElementById(id).innerHTML;
+				document.getElementById("area").value=t+buttonText;
+			}
+			else
+			{
+				var buttonText=document.getElementById(id).innerHTML;
+				document.getElementById("area").value=buttonText;
+				z=false;
+			}
+		}
+		function operatorPress(agrawal)
+		{
+			z=true;
+			oldValue=Number(document.getElementById("area").value);
+			if(agrawal=="plus")
+			{
+				opcode=1;
+			}
+			else if(agrawal=="minus")
+			{
+				opcode=2;
+			}
+		}
+		function equals(aarti)
+		{
+			//take new value from text area
+				var newValue=Number(document.getElementById("area").value);
+				
+			//calculate answer
+				if(opcode==1)
+				{
+					var ans=oldValue+newValue;
+				}
+				else if(opcode==2)
+				{
+					var ans=oldValue-newValue;
+				}
+			
+			//display answer
+			document.getElementById("area").value=ans;
+		}
+		</script>
+	</head>
+	<body>
+		<textarea id="area"></textarea><br />
+		<button id="b1" onclick="append('b1')">1</button>
+		<button id="b2" onclick="append('b2')">2</button>
+		<button id="plus" onclick="operatorPress('plus')">+</button>
+		<button id="minus" onclick="operatorPress('minus')">-</button>
+		<button id="eq" onclick="equals('eq')">=</button>
+		
+	</body>
+</html>

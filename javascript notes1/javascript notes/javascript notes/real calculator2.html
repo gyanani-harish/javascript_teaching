@@ -1,0 +1,113 @@
+<html>
+	<head>
+		<script>
+			var bool1=false;
+			var xx=0;
+			var op=0;
+			/*
+				1 for plus
+				2 for minus
+				3 for multiply
+				4 for divide
+			*/
+			function a(id)
+				{
+					if(bool1==false)
+					{
+						var x=document.getElementById("as").value;
+						var y = document.getElementById(id).innerHTML;
+						document.getElementById("as").value=x+y;
+					}
+					else
+					{
+						document.getElementById("as").value="";
+						var y = document.getElementById(id).innerHTML;
+						document.getElementById("as").value=y;
+						bool1=false;
+					}
+				}
+				
+				function back()
+				{
+				var x=document.getElementById("as").value;
+				x=x.substr(0,x.length-1);
+				document.getElementById("as").value=x;
+				}
+				function o()
+				{
+						xx=Number(document.getElementById("as").value);
+						bool1=true;
+						op=1;
+				}
+				function l()
+				{
+						xx=Number(document.getElementById("as").value);
+						bool1=true;
+						op=2;
+				}
+				function k()
+				{
+						xx=Number(document.getElementById("as").value);
+						bool1=true;
+						op=3;
+				}
+				function j()
+				{
+						xx=Number(document.getElementById("as").value);
+						bool1=true;
+						op=4;
+				}
+				function p()
+				{
+					switch(op)
+					{
+						case 1:
+							var tt=xx+Number(document.getElementById("as").value);
+							document.getElementById("as").value=tt;
+						break;
+						case 2:
+							var tt=xx-Number(document.getElementById("as").value);
+							document.getElementById("as").value=tt;
+						break;
+						case 3:
+							var tt=xx*Number(document.getElementById("as").value);
+							document.getElementById("as").value=tt;
+						break;
+						case 4:
+							var tt=xx/Number(document.getElementById("as").value);
+							document.getElementById("as").value=tt;
+						break;
+						
+					}
+				}
+				function clearr()
+				{
+					xx=0;
+					bool1=false;
+					op=0;
+					document.getElementById("as").value="";
+				}
+		</script>
+	</head>
+	<body>
+	<textarea id="as"></textarea><br />
+	<button id="b1" onclick="a('b1')">7</button>
+	<button id="b2" onclick="a('b2')">8</button>
+	<button id="b3" onclick="a('b3')">9</button><br />
+	<button id="b4" onclick="a('b4')">4</button>
+	<button id="b5" onclick="a('b5')">5</button>
+	<button id="b6" onclick="a('b6')">6</button><br />
+	<button id="b7" onclick="a('b7')">1</button>
+	<button id="b8" onclick="a('b8')">2</button>
+	<button id="b9" onclick="a('b9')">3</button><br />
+	<button onclick="j()">/</button>
+	<button onclick="k()">*</button>
+	<button onclick="l()">-</button><br />
+	<button onclick="m()">0</button>
+	<button onclick="n()">.</button>
+	<button onclick="o()">+</button>
+	<button onclick="p()">=</button><br />
+	<button onclick="back()">Backspace</button>
+	<button onclick="clearr()">Clear</button>
+	</body>
+</html>

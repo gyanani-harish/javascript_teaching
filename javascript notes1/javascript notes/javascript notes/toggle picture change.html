@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			var b=false;//false means off
+			function abc()
+			{
+				if(b==false)
+				{
+					document.getElementById("a1").src="picture1.png";
+					b=true;
+				}
+				else
+				{
+					document.getElementById("a1").src="picture3.png";
+					b=false;
+				}
+				
+			}
+		</script>
+	</head>
+	<body onclick="abc()">
+		<img src="picture3.png" id="a1" />
+	</body>
+</html>

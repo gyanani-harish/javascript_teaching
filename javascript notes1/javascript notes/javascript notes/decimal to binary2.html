@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<script>
+			function as()
+			{
+			var n=document.getElementById("a1").value;
+			var x="";
+			for(i=1;n!=0;i++)
+				{
+					var z=n%2;
+					x=x+z;
+					var n=parseInt(n/2);
+					
+				}
+				var y="";
+				for(i=0;i<x.length;)
+				{
+					var m=x.substr(x.length-1,1);
+				    x=x.substr(0,x.length-1);
+					y=y+m;
+				}
+				document.write(y);
+				
+			}
+		</script>
+	</head>
+	<body>
+		<input type="text" id="a1">
+		<button onclick="as()">ok</button>
+	</body>
+</html>

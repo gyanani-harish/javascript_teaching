@@ -1,0 +1,23 @@
+<html>
+	<head>
+	<script>
+		function as()
+		{
+			var n=document.getElementById("a1").value;
+			
+			
+			var b = parseInt(n/60);
+			var hours=parseInt(n/3600);
+			var minutes=b%60;
+			document.write(hours+" hours ");
+			document.write(minutes+" minute ");
+			var c = n%60;
+			document.write(c+" seconds ");
+		}
+		</script>
+	</head>
+	<body>
+		<input type="text" id="a1" />
+		<input type="button"  onclick="as()" />
+	</body>
+</html>

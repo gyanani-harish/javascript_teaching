@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<script>
+			function yo(x)
+			{
+				var a=Number(prompt('enter first number'));
+				var b=Number(prompt('enter first number'));
+				if(x=='plus')
+				{
+					var c=a+b;
+				}
+				else
+				{
+					var c=a-b;
+				}
+				document.write(c);
+			}
+		</script>
+	</head>
+	<body>
+		<button onclick="yo('minus')">-</button>
+		<button onclick="yo('plus')">+</button>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<script>
+			function as()
+			{
+				var left = Number(document.getElementById("qw").value);
+				var right = Number(document.getElementById("df").value);
+				var extra = right;
+				right = left;
+				left = extra;
+				document.getElementById("qw").value=left;
+				
+				document.getElementById("df").value=right;
+			}
+			
+		</script>
+	</head>
+	<body>
+	<input type = "text" id="qw">
+	<input type="text" id="df">
+	<button onclick="as()">ok</button>
+	</body>
+</html>
