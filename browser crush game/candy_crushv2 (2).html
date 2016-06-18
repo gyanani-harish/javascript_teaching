@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>Untitled</title>
+  <script>
+    function displayButtons()
+    {
+      for(var i=1;i<=30;i++)
+      {
+        var t=Math.floor(Math.random() * 7) + 1;
+        var chrome='gc.png';
+        var netscape='net.png';
+        var safari='safari_black.png';
+        var uc='uc.png';
+        var firefox='fox.png';
+		var fox2='nightly_fox.png';
+		var comodo='comodo_dragon.png';
+        var h=60,w=60;
+        if(t==1)
+        {
+            document.write("<img height="+h+" width="+w+" src="+chrome+" />");
+        }
+        else if(t==2)
+        {
+            document.write("<img height="+h+" width="+w+"  src="+netscape+" />");
+        }
+        else if(t==3)
+        {
+            document.write("<img height="+h+" width="+w+" src="+firefox+" />");
+        }
+        else if(t==4)
+        {
+            document.write("<img height="+h+" width="+w+" src="+uc+" />");
+        }
+          else if(t==5)
+        {
+            document.write("<img height="+h+" width="+w+" src="+safari+" />");
+        }
+		else if(t==6)
+        {
+            document.write("<img height="+h+" width="+w+" src="+fox2+" />");
+        }
+		else if(t==7)
+        {
+            document.write("<img height="+h+" width="+w+" src="+comodo+" />");
+        }
+        if(i%5==0)
+        {
+          document.write("<br />");
+        }
+      }
+      document.write("<input type='text' readonly='readonly' value='0'  />");  
+    }
+  </script>
+</head>
+
+<body onload="displayButtons()">
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<html>
+
+<head>
+
+        <script src="jquery-1.7.2.min.js"></script>
+     <script>
+$(document).ready(function(){
+  $("div").mousedown(function(event){
+
+
+
+            $("body").mouseup(function(event){
+                var x=event.pageX;
+                var y=event.pageY;
+                $("div").animate({left:x,top:y});
+            });
+
+
+
+
+
+  }
+);
+ }
+);
+    </script>
+  <style>
+      #a1{
+        height: 100px;
+        width: 100px;
+        background-color: #57C5CC;
+        position: absolute;
+        left:0;
+        top:0;
+      }
+
+  </style>
+</head>
+
+<body>
+      <div id="a1"></div>
+</body>
+
+</html>

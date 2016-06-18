@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>Untitled</title>
+  <script>
+    function abc()
+    {
+               var t=Number(document.getElementById('txt1').value);
+               switch(t)
+               {
+                 case 1:alert('sunday'); break;
+                 case 2:alert('monday'); break;
+                 case 3:alert('tuesday'); break;
+                 case 4:alert('wednesday'); break;
+                 case 5:alert('thursday'); break;
+                 case 6:alert('friday'); break;
+                 case 7:alert('saturday'); break;
+                 default:alert('wrong value'); break;
+               }
+
+    }
+  </script>
+</head>
+
+<body>
+<input type="text" id="txt1" />
+<button onclick="abc()"> ok</button>
+</body>
+
+</html>
