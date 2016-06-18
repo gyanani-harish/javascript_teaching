@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <script>
+    /*
+        @@@
+        @@@
+        @@@
+    */
+        function abc()
+        {
+          var n=parseInt(document.getElementById('t1').value);
+            for(var lines=1;lines<=n;lines++)
+            {
+              for(var elements=1;elements<=n;elements++)
+              {
+                    document.write("@");
+              }
+              document.write("<br />");
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+  <input type="text" id="t1" />
+<input type="button" onclick="abc()" />
+</body>
+
+</html>

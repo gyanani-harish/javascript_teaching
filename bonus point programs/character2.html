@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <script>
+  function abc(){
+   var n=parseInt(document.getElementById('i1').value);
+
+   for (var l=1;l<=n;l++)
+   {
+
+               for(e=1;e<=l;e++)
+               {
+                document.write(String.fromCharCode(64+l));
+               }
+
+                  document.write("</br>");          
+
+   }
+
+
+  }
+
+
+
+  </script>
+</head>
+
+<body>
+ <input id="i1" type="number" />
+ <button onclick="abc()"></button>
+</body>
+
+</html>

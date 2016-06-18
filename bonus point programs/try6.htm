@@ -1,0 +1,34 @@
+<html>
+<head>
+
+  <script>
+
+   function abc()
+   {
+                   var a= parseInt(document.getElementById('a1').value);
+                    var t=0;
+                    var y=a;
+
+                   for (var lines=1;lines<=a;lines++)
+                   {
+                      for(var spaces=1;spaces<=t;spaces++)
+                     {
+                       document.write("_");
+                     }
+                     for(var elements=1;elements<=y;elements++)
+                     {
+                       document.write(elements);
+                     }
+                     document.write("<br />");  t++; y--;
+                   }
+
+   }
+
+  </script>
+</head>
+
+<body>
+    <input type="text" id="a1">
+    <input type="button" onclick="abc()">
+</body>
+</html>

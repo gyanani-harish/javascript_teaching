@@ -1,0 +1,46 @@
+<html>
+<head>
+<script>
+  function abc()
+  {
+    var f= parseInt(document.getElementById("s1").selectedIndex);
+
+           if(f==0)
+           {
+                  document.getElementById("g1").value="lamborhgini gallardo";
+           }
+           else if(f==1)
+           {
+              document.getElementById("g1").value="bugati veryon";
+           }
+           else if(f==2)
+           {
+              document.getElementById("g1").value="maruti suzuki 800";
+           }
+           else if(f==3)
+           {
+              document.getElementById("g1").value="lancer evolution VIII";
+           }
+           else {
+              document.getElementById("g1").value="bmw i8";
+           }
+
+  }
+</script>
+</head>
+<body onload="abc()">
+
+               <form>
+               <select onchange="abc()" id="s1">
+               <option id="a1">salil</option>
+               <option id="a2">jasnoor</option>
+               <option id="a3">akshit</option>
+               <option id="a4">arjun</option>
+               <option id="a5">harish sir</option>
+               </select>
+               </form>
+
+    <input type="text"  id="g1"/>
+</body>
+
+</html>

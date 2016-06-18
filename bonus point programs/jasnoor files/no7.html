@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <script>
+  function abc(){
+   var val=document.getElementById('i1').value;
+   var t=0;
+   var y=val;
+   for (var a=1;a<=val;a++){
+           for(var s=t;s>=1;s--)
+           {
+           document.write("_");
+
+           }
+               for(e=y;e>=1;e--)
+               {
+               document.write(e);
+
+
+               }
+                  document.write("</br>");t++;y--;
+
+   }
+
+
+  }
+
+
+
+  </script>
+</head>
+
+<body>
+ <input id="i1" type="number" />
+ <button onclick="abc()"></button>
+</body>
+
+</html>
